@@ -20,6 +20,46 @@ SignalShield is an educational digital communications simulator. It lets you sen
 
 The interface follows **Input → Signal System → Output**, with waveform and integrity analysis underneath.
 
+## How the complete system works
+
+The diagram below follows a message through the full application. The Performance Lab uses the same signal engine and adds repeatable experiments and downloadable results.
+
+```mermaid
+flowchart LR
+  IN[Input\nText or WAV audio] --> PRE[Prepare payload\nUTF-8 / PCM, framing, CRC-32]
+  PRE --> FEC[Optional Hamming\n7,4 error correction]
+  FEC --> TX[Transmitter\nBPSK + RRC pulse shaping]
+  TX --> CH[Channel\nAttenuation, tone interference, AWGN]
+  CH --> RX{Receiver}
+  RX -->|Baseline| MF[Matched filter + detector]
+  RX -->|Notch option| NF[Notch filter + matched receiver]
+  MF --> DEC[Decode and verify\nFEC, CRC, exact payload check]
+  NF --> DEC
+  DEC --> OUT[Recovered text / audio\nSignal and integrity analysis]
+  LAB[Performance Lab\nscenario, seeds, repeats] --> RUN[Experiment runner]
+  RUN --> TX
+  RUN --> CH
+  RUN --> RX
+  RUN --> ART[CSV, JSON, plots, manifest]
+```
+
+### Signal examples from the simulator
+
+These figures are generated from the project's signal-processing runs and validation outputs.
+
+<div align="center">
+  <img src="results/m2/m2_tx_waveform.png" alt="BPSK signal after root-raised-cosine pulse shaping" width="700">
+  <p><em>Pulse-shaped transmit waveform</em></p>
+  <img src="results/m3/m3_interference_time_spectrum.png" alt="Signal waveform and spectrum showing narrowband interference" width="700">
+  <p><em>Channel signal with narrowband interference</em></p>
+  <img src="results/m4/m4_received_spectrum_before_after.png" alt="Received spectrum before and after notch filtering" width="700">
+  <p><em>Receiver spectrum before and after notch filtering</em></p>
+  <img src="results/m6/validation/long_run_awgn/ber_by_condition.png" alt="Measured bit error rate by channel condition, compared with BPSK theory" width="700">
+  <p><em>Long-run BER validation against the coherent BPSK reference</em></p>
+</div>
+
+For component responsibilities, implementation boundaries, and the full data path, see [System Architecture](docs/system_architecture.md).
+
 ## Capabilities
 
 - UTF-8 text and short PCM WAV audio payloads with framing, CRC-32, and optional Hamming (7,4) error correction.
