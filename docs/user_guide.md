@@ -13,7 +13,7 @@ Open the local URL printed by Streamlit, usually `http://localhost:8501`.
 
 ## Send a text or voice payload
 
-In **Transmit & Analyze**, follow the four on-screen stages: **Input → Channel → Receiver → Recovery**. Select **Text Message** or **Voice / Audio**, provide the content, then press the single **Transmit & Analyze** button. A run happens only when submitted. The communication chain displays a prominent recovery status, compact metrics, original/recovered payload comparison, and plots grouped into **Transmit**, **Channel**, **Receiver**, and **Recovery** views. Input or setting changes hide results from the earlier configuration.
+In **Transmit & Analyze**, follow the visual flow: **Input → Signal System → Output**. Select **Text Message** or **Voice / Audio** in the Input panel, choose system behavior under **Advanced Settings**, and press **Transmit & Analyze** in the center Signal System panel. The actual decoded text or recovered audio appears in Output; signal analysis and the four waveform views appear below. A run happens only when submitted. Input or setting changes hide results from the earlier configuration. A four-stage **Input → Channel → Receiver → Recovery** status indicator tracks the current run.
 
 For audio, choose microphone recording or WAV upload. Accepted input is PCM signed 16-bit WAV, mono or stereo, sample rate 8–48 kHz, up to one second and 2 MiB. Unsupported encodings, malformed WAV files, excessive duration, and other channel layouts are rejected. Microphone recording uses the same validation. No speech recognition occurs.
 

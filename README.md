@@ -59,9 +59,9 @@ Open the local URL printed by Streamlit (normally `http://localhost:8501`). The 
 
 ## Public web deployment
 
-SignalShield is prepared for [Streamlit Community Cloud](https://share.streamlit.io/) with a root `requirements.txt`, root `.streamlit/config.toml`, and the entry point `src/signalshield/streamlit_app.py`. Select Python 3.11 in the Community Cloud advanced settings to match the validated local runtime. The requested subdomain is `signalshield-lab`; Community Cloud will confirm whether it is available when the app is created. The public application URL will be added here after deployment and public access are verified.
+The reviewed source is published at [github.com/AJC938/SignalShield](https://github.com/AJC938/SignalShield). SignalShield is prepared for [Streamlit Community Cloud](https://share.streamlit.io/) with a root `requirements.txt`, root `.streamlit/config.toml`, and the entry point `src/signalshield/streamlit_app.py`. Select Python 3.11 in the Community Cloud advanced settings to match the validated local runtime. The requested subdomain is `signalshield-lab`; Community Cloud will confirm whether it is available when the app is created. The public application URL will be added here after deployment and public access are verified.
 
-To deploy after this project is pushed to a public GitHub repository:
+To deploy the public repository:
 
 1. Sign in to Streamlit Community Cloud and choose **Create app**.
 2. Select the repository and `main` branch, then enter `src/signalshield/streamlit_app.py` as the app file.
