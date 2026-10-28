@@ -5,11 +5,6 @@
   <p>Transmit · Disturb · Recover · Analyze</p>
 </div>
 
-<div align="center">
-  <!-- The verified free-hosted app link will be placed here after Streamlit deployment. -->
-  <strong>Live app link is being prepared.</strong>
-</div>
-
 SignalShield is an educational digital communications simulator. It lets you send short text or audio payloads through a configurable BPSK link, inspect channel effects, and compare receiver outputs in a visual web interface.
 
 ## Signal system
@@ -71,10 +66,6 @@ For component responsibilities, implementation boundaries, and the full data pat
 ## Technology
 
 Python 3.11+, Streamlit, NumPy, SciPy, and Matplotlib. No API keys or external services are required by the simulator.
-
-## Public web app
-
-The application is being prepared for the free Streamlit Community Cloud. Its hosted address will use a `streamlit.app` subdomain; `signalshield-lab` is the requested name, subject to availability. The final HTTPS link will replace the message above after deployment and public access are verified. A custom `.dev` domain would need to be registered separately.
 
 ## Educational scope
 
