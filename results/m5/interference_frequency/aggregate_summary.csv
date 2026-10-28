@@ -1,0 +1,6 @@
+scenario,scenario_point_index,scenario_parameter,scenario_value,receiver_id,n_repetitions,mean_run_ber,between_run_ber_standard_deviation,mean_run_ber_t_ci_lower,mean_run_ber_t_ci_upper,mean_errors_per_run,bits_per_run,per_run_binomial_intervals_retained_in_results_csv
+interference_frequency,0,interference_frequency_cycles_per_symbol,0.15,baseline_m2,2,0.03155,0.0017677669529663704,0.015667244079781623,0.04743275592021838,315.5,10000,True
+interference_frequency,1,interference_frequency_cycles_per_symbol,0.35,baseline_m2,2,0.0315,0.0014142135623730963,0.018793795263825297,0.044206204736174703,315.0,10000,True
+interference_frequency,2,interference_frequency_cycles_per_symbol,0.7,baseline_m2,2,0.0021999999999999997,0.0002828427124746188,0.0,0.004741240947234937,22.0,10000,True
+interference_frequency,3,interference_frequency_cycles_per_symbol,1.1,baseline_m2,2,0.0021999999999999997,0.0002828427124746188,0.0,0.004741240947234937,22.0,10000,True
+interference_frequency,4,interference_frequency_cycles_per_symbol,1.6,baseline_m2,2,0.00215,0.0002121320343559642,0.00024406928957379655,0.004055930710426203,21.5,10000,True

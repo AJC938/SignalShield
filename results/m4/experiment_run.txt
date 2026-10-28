@@ -1,0 +1,32 @@
+M4 experiment runtime: 2.347 s
+saved: results\m4\m4_notch_frequency_response.png
+saved: results\m4\m4_interference_before_after_time.png
+saved: results\m4\m4_received_spectrum_before_after.png
+saved: results\m4\m4_desired_signal_distortion.png
+saved: results\m4\m4_main_baseline_vs_notch_ber.png
+saved: results\m4\m4_ber_vs_interference_amplitude.png
+saved: results\m4\m4_ber_vs_frequency_mismatch.png
+saved: results\m4\m4_awgn_only_control.png
+saved: results\m4\m4_receiver_comparison.csv
+saved: results\m4\m4_interference_amplitude_sweep.csv
+saved: results\m4\m4_frequency_mismatch_sweep.csv
+saved: results\m4\m4_notch_frequency_response.csv
+saved: results\m4\m4_filter_diagnostics.json
+saved: results\m4\m4_filter_diagnostic_waveforms.csv
+saved: results\m4\m4_experiment_config.json
+clean_noiseless: actual tone= amplitude=0.0; baseline=0/30000 BER=0; notch=0/30000 BER=0; corrected=0 introduced=0; tone attenuation dB=
+awgn_only_control: actual tone= amplitude=0.0; baseline=71/30000 BER=0.002366667; notch=130/30000 BER=0.004333333; corrected=21 introduced=80; tone attenuation dB=
+matched_frequency_tone: actual tone=0.35 amplitude=0.22; baseline=964/30000 BER=0.03213333; notch=132/30000 BER=0.0044; corrected=894 introduced=62; tone attenuation dB=-74.27823471617032
+interference_amplitude_sweep: actual tone= amplitude=0.0; baseline=83/30000 BER=0.002766667; notch=136/30000 BER=0.004533333; corrected=16 introduced=69; tone attenuation dB=
+interference_amplitude_sweep: actual tone=0.35 amplitude=0.08; baseline=148/30000 BER=0.004933333; notch=136/30000 BER=0.004533333; corrected=81 introduced=69; tone attenuation dB=-74.27823471617043
+interference_amplitude_sweep: actual tone=0.35 amplitude=0.16; baseline=430/30000 BER=0.01433333; notch=136/30000 BER=0.004533333; corrected=367 introduced=73; tone attenuation dB=-74.27823471617043
+interference_amplitude_sweep: actual tone=0.35 amplitude=0.22; baseline=916/30000 BER=0.03053333; notch=136/30000 BER=0.004533333; corrected=854 introduced=74; tone attenuation dB=-74.27823471617032
+interference_amplitude_sweep: actual tone=0.35 amplitude=0.3; baseline=2137/30000 BER=0.07123333; notch=136/30000 BER=0.004533333; corrected=2073 introduced=72; tone attenuation dB=-74.27823471617043
+interference_amplitude_sweep: actual tone=0.35 amplitude=0.42; baseline=5018/30000 BER=0.1672667; notch=136/30000 BER=0.004533333; corrected=4954 introduced=72; tone attenuation dB=-74.27823471617029
+frequency_mismatch_sweep: actual tone=0.31 amplitude=0.22; baseline=946/30000 BER=0.03153333; notch=1171/30000 BER=0.03903333; corrected=174 introduced=399; tone attenuation dB=-0.1619975231639027
+frequency_mismatch_sweep: actual tone=0.33 amplitude=0.22; baseline=919/30000 BER=0.03063333; notch=1024/30000 BER=0.03413333; corrected=215 introduced=320; tone attenuation dB=-0.6702181612604827
+frequency_mismatch_sweep: actual tone=0.34 amplitude=0.22; baseline=1002/30000 BER=0.0334; notch=662/30000 BER=0.02206667; corrected=436 introduced=96; tone attenuation dB=-2.482795559378878
+frequency_mismatch_sweep: actual tone=0.35 amplitude=0.22; baseline=955/30000 BER=0.03183333; notch=134/30000 BER=0.004466667; corrected=890 introduced=69; tone attenuation dB=-74.27823471617032
+frequency_mismatch_sweep: actual tone=0.36 amplitude=0.22; baseline=945/30000 BER=0.0315; notch=623/30000 BER=0.02076667; corrected=415 introduced=93; tone attenuation dB=-2.60554580637786
+frequency_mismatch_sweep: actual tone=0.37 amplitude=0.22; baseline=871/30000 BER=0.02903333; notch=954/30000 BER=0.0318; corrected=215 introduced=298; tone attenuation dB=-0.7459270541571944
+frequency_mismatch_sweep: actual tone=0.39 amplitude=0.22; baseline=871/30000 BER=0.02903333; notch=1079/30000 BER=0.03596667; corrected=153 introduced=361; tone attenuation dB=-0.2023474121742581

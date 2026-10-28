@@ -1,0 +1,8 @@
+# Editable project install adds the src/ package and its scientific dependencies.
+-e .
+
+# Versions exercised by the local M1–M6 validation environment.
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.11.2
+streamlit==1.66.1

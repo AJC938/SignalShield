@@ -1,0 +1,6 @@
+scenario,scenario_point_index,scenario_parameter,scenario_value,receiver_id,n_repetitions,mean_run_ber,between_run_ber_standard_deviation,mean_run_ber_t_ci_lower,mean_run_ber_t_ci_upper,mean_errors_per_run,bits_per_run,per_run_binomial_intervals_retained_in_results_csv
+attenuation,0,attenuation_db,0.0,baseline_m2,2,0.0015,0.00042426406871192855,0.0,0.005311861420852408,15.0,10000,True
+attenuation,1,attenuation_db,2.0,baseline_m2,2,0.0115,0.00014142135623730864,0.010229379526382539,0.012770620473617461,115.0,10000,True
+attenuation,2,attenuation_db,4.0,baseline_m2,2,0.035500000000000004,0.0009899494936611703,0.026605656684677684,0.04439434331532233,355.0,10000,True
+attenuation,3,attenuation_db,6.0,baseline_m2,2,0.07585,0.0007778174593051951,0.06886158739510398,0.08283841260489602,758.5,10000,True
+attenuation,4,attenuation_db,8.0,baseline_m2,2,0.1264,0.0012727922061357827,0.11496441573744282,0.1378355842625572,1264.0,10000,True

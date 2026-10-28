@@ -1,0 +1,3 @@
+scenario,scenario_point_index,scenario_parameter,scenario_value,receiver_id,n_repetitions,mean_run_ber,between_run_ber_standard_deviation,mean_run_ber_t_ci_lower,mean_run_ber_t_ci_upper,mean_errors_per_run,bits_per_run,per_run_binomial_intervals_retained_in_results_csv
+receiver_comparison,0,interference_frequency_cycles_per_symbol,0.35,baseline_m2,2,0.030950000000000002,0.0009192388155425136,0.022690966921486436,0.03920903307851357,309.5,10000,True
+receiver_comparison,0,interference_frequency_cycles_per_symbol,0.35,notch_m2,2,0.0043,0.0012727922061357855,0.0,0.015735584262557223,43.0,10000,True

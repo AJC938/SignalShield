@@ -1,0 +1,41 @@
+experiment_id=m5_frequency_mismatch
+scenario=frequency_mismatch
+configuration_id=c05da2774304437a
+master_seed=20261031; repetitions=2; n_bits=10000
+status=success scenario=frequency_mismatch repetition=0 point=0:actual_interference_frequency_cycles_per_symbol=0.31 receiver=baseline_m2 errors=311/10000 BER=0.0311 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=0:actual_interference_frequency_cycles_per_symbol=0.31 receiver=notch_m2 errors=402/10000 BER=0.0402 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=1:actual_interference_frequency_cycles_per_symbol=0.33 receiver=baseline_m2 errors=303/10000 BER=0.0303 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=1:actual_interference_frequency_cycles_per_symbol=0.33 receiver=notch_m2 errors=359/10000 BER=0.0359 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=2:actual_interference_frequency_cycles_per_symbol=0.34 receiver=baseline_m2 errors=309/10000 BER=0.0309 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=2:actual_interference_frequency_cycles_per_symbol=0.34 receiver=notch_m2 errors=233/10000 BER=0.0233 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=3:actual_interference_frequency_cycles_per_symbol=0.35 receiver=baseline_m2 errors=329/10000 BER=0.0329 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=3:actual_interference_frequency_cycles_per_symbol=0.35 receiver=notch_m2 errors=42/10000 BER=0.0042 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=4:actual_interference_frequency_cycles_per_symbol=0.36 receiver=baseline_m2 errors=299/10000 BER=0.0299 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=4:actual_interference_frequency_cycles_per_symbol=0.36 receiver=notch_m2 errors=220/10000 BER=0.022 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=5:actual_interference_frequency_cycles_per_symbol=0.37 receiver=baseline_m2 errors=278/10000 BER=0.0278 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=5:actual_interference_frequency_cycles_per_symbol=0.37 receiver=notch_m2 errors=320/10000 BER=0.032 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=6:actual_interference_frequency_cycles_per_symbol=0.39 receiver=baseline_m2 errors=295/10000 BER=0.0295 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=0 point=6:actual_interference_frequency_cycles_per_symbol=0.39 receiver=notch_m2 errors=357/10000 BER=0.0357 seed_bit=3256986554 seed_noise=2684263834
+status=success scenario=frequency_mismatch repetition=1 point=0:actual_interference_frequency_cycles_per_symbol=0.31 receiver=baseline_m2 errors=304/10000 BER=0.0304 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=0:actual_interference_frequency_cycles_per_symbol=0.31 receiver=notch_m2 errors=369/10000 BER=0.0369 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=1:actual_interference_frequency_cycles_per_symbol=0.33 receiver=baseline_m2 errors=332/10000 BER=0.0332 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=1:actual_interference_frequency_cycles_per_symbol=0.33 receiver=notch_m2 errors=371/10000 BER=0.0371 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=2:actual_interference_frequency_cycles_per_symbol=0.34 receiver=baseline_m2 errors=310/10000 BER=0.031 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=2:actual_interference_frequency_cycles_per_symbol=0.34 receiver=notch_m2 errors=224/10000 BER=0.0224 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=3:actual_interference_frequency_cycles_per_symbol=0.35 receiver=baseline_m2 errors=301/10000 BER=0.0301 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=3:actual_interference_frequency_cycles_per_symbol=0.35 receiver=notch_m2 errors=37/10000 BER=0.0037 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=4:actual_interference_frequency_cycles_per_symbol=0.36 receiver=baseline_m2 errors=301/10000 BER=0.0301 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=4:actual_interference_frequency_cycles_per_symbol=0.36 receiver=notch_m2 errors=202/10000 BER=0.0202 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=5:actual_interference_frequency_cycles_per_symbol=0.37 receiver=baseline_m2 errors=299/10000 BER=0.0299 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=5:actual_interference_frequency_cycles_per_symbol=0.37 receiver=notch_m2 errors=318/10000 BER=0.0318 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=6:actual_interference_frequency_cycles_per_symbol=0.39 receiver=baseline_m2 errors=257/10000 BER=0.0257 seed_bit=3422712152 seed_noise=3578435847
+status=success scenario=frequency_mismatch repetition=1 point=6:actual_interference_frequency_cycles_per_symbol=0.39 receiver=notch_m2 errors=319/10000 BER=0.0319 seed_bit=3422712152 seed_noise=3578435847
+overall_status=completed; failed_points=0
+saved=results\m5\frequency_mismatch\resolved_config.json
+saved=results\m5\frequency_mismatch\results.csv
+saved=results\m5\frequency_mismatch\aggregate_summary.csv
+saved=results\m5\frequency_mismatch\paired_summary.csv
+saved=results\m5\frequency_mismatch\ber_by_condition.png
+saved=results\m5\frequency_mismatch\run_variability.png
+saved=results\m5\frequency_mismatch\paired_ber_difference.png
+saved=results\m5\frequency_mismatch\manifest.json

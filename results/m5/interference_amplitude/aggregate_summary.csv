@@ -1,0 +1,7 @@
+scenario,scenario_point_index,scenario_parameter,scenario_value,receiver_id,n_repetitions,mean_run_ber,between_run_ber_standard_deviation,mean_run_ber_t_ci_lower,mean_run_ber_t_ci_upper,mean_errors_per_run,bits_per_run,per_run_binomial_intervals_retained_in_results_csv
+interference_amplitude,0,interference_amplitude_peak,0.0,baseline_m2,2,0.0028,0.0008485281374238568,0.0,0.010423722841704813,28.0,10000,True
+interference_amplitude,1,interference_amplitude_peak,0.08,baseline_m2,2,0.0053,0.0011313708498984765,0.0,0.015464963788939759,53.0,10000,True
+interference_amplitude,2,interference_amplitude_peak,0.16,baseline_m2,2,0.015050000000000001,0.00035355339059327283,0.011873448815956335,0.018226551184043666,150.5,10000,True
+interference_amplitude,3,interference_amplitude_peak,0.22,baseline_m2,2,0.03215,0.002192031021678299,0.01245538265892921,0.051844617341070785,321.5,10000,True
+interference_amplitude,4,interference_amplitude_peak,0.3,baseline_m2,2,0.07425,0.0024748737341529184,0.052014141711694266,0.09648585828830572,742.5,10000,True
+interference_amplitude,5,interference_amplitude_peak,0.42,baseline_m2,2,0.1686,0.0022627416997969383,0.14827007242212062,0.18892992757787938,1686.0,10000,True

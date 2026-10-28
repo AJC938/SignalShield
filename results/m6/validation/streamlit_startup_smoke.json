@@ -1,0 +1,7 @@
+{
+  "command": ".\\.venv\\Scripts\\python.exe -m streamlit run src\\signalshield\\streamlit_app.py --server.headless true --server.port 8503 --server.address 127.0.0.1 --browser.gatherUsageStats false",
+  "health_endpoint": 200,
+  "health_body": "ok",
+  "app_root_http": 200,
+  "browser_interaction": "Not performed; Streamlit AppTest exercised the message and Performance Lab flows."
+}

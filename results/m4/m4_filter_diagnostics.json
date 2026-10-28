@@ -1,0 +1,56 @@
+{
+  "experiment": "matched_frequency_tone_diagnostics",
+  "master_seed": 20261030,
+  "bit_seed": 1306115188,
+  "noise_seed": 380539748,
+  "configuration": {
+    "n_bits": 30000,
+    "ebn0_db": 6.0,
+    "samples_per_symbol": 8,
+    "rrc_rolloff": 0.35,
+    "rrc_span_symbols": 10,
+    "tone_amplitude_peak": 0.22,
+    "tone_frequency_cycles_per_symbol": 0.35,
+    "tone_phase_rad": 0.37,
+    "notch_center_cycles_per_symbol": 0.35,
+    "notch_quality_factor": 30.0,
+    "filter_mode": "scipy.signal.filtfilt, padtype=odd, padlen=9; offline/noncausal"
+  },
+  "measurements": {
+    "interference_amplitude_input_least_squares": 0.22000000000000033,
+    "interference_amplitude_output_least_squares": 4.251194204550079e-05,
+    "interference_amplitude_attenuation_db": -74.27823471617032,
+    "desired_signal_record_power_before_notch": 0.12494733582701527,
+    "desired_signal_record_power_after_notch": 0.11860821338544535,
+    "desired_signal_rms_gain_after_notch_interior": 0.9743000151443149,
+    "desired_signal_relative_rms_distortion_interior": 0.1308316717768676,
+    "awgn_sample_variance_before_notch": 0.12606219887162387,
+    "awgn_sample_variance_after_notch_interior": 0.12517627469151002,
+    "total_received_power_before_notch": 0.2741550725292423,
+    "total_received_power_after_notch": 0.2434558237989021,
+    "awgn_decision_sample_variance_after_notch": 0.11978252809131411
+  },
+  "notch_coefficients": {
+    "b": [
+      0.9954393732667364,
+      -1.9161316747454145,
+      0.9954393732667364
+    ],
+    "a": [
+      1.0,
+      -1.9161316747454145,
+      0.9908787465334727
+    ]
+  },
+  "noise_input_variance_configured": 0.125594321575479,
+  "noise_output_mean_square_power": 0.12518710297939684,
+  "single_pass_and_forward_backward_responses": "m4_notch_frequency_response.csv",
+  "software": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  },
+  "paired_test": "exact two-sided McNemar binomial test on discordant bit outcomes; p-value assumes independent discordant pairs",
+  "paired_interval": "contiguous block bootstrap on candidate-minus-baseline bit error indicators; 50-bit blocks, 1000 replicates"
+}

@@ -1,0 +1,2 @@
+scenario,scenario_point_index,scenario_parameter,scenario_value,n_repetitions,mean_paired_delta_candidate_minus_baseline,between_run_delta_standard_deviation,mean_delta_t_ci_lower,mean_delta_t_ci_upper
+receiver_comparison,0,interference_frequency_cycles_per_symbol,0.35,2,-0.02665,0.00035355339059327164,-0.029826551184043655,-0.023473448815956345

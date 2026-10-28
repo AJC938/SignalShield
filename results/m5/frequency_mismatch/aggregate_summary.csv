@@ -1,0 +1,15 @@
+scenario,scenario_point_index,scenario_parameter,scenario_value,receiver_id,n_repetitions,mean_run_ber,between_run_ber_standard_deviation,mean_run_ber_t_ci_lower,mean_run_ber_t_ci_upper,mean_errors_per_run,bits_per_run,per_run_binomial_intervals_retained_in_results_csv
+frequency_mismatch,0,actual_interference_frequency_cycles_per_symbol,0.31,baseline_m2,2,0.03075,0.0004949747468305827,0.026302828342338862,0.03519717165766114,307.5,10000,True
+frequency_mismatch,0,actual_interference_frequency_cycles_per_symbol,0.31,notch_m2,2,0.03855,0.002333452377915605,0.017584762185311777,0.059515237814688225,385.5,10000,True
+frequency_mismatch,1,actual_interference_frequency_cycles_per_symbol,0.33,baseline_m2,2,0.03175,0.0020506096654409876,0.013326003132546699,0.0501739968674533,317.5,10000,True
+frequency_mismatch,1,actual_interference_frequency_cycles_per_symbol,0.33,notch_m2,2,0.036500000000000005,0.0008485281374238569,0.028876277158295188,0.04412372284170482,365.0,10000,True
+frequency_mismatch,2,actual_interference_frequency_cycles_per_symbol,0.34,baseline_m2,2,0.03095,7.071067811865432e-05,0.030314689763191266,0.03158531023680873,309.5,10000,True
+frequency_mismatch,2,actual_interference_frequency_cycles_per_symbol,0.34,notch_m2,2,0.022850000000000002,0.0006363961030678939,0.01713220786872138,0.028567792131278625,228.5,10000,True
+frequency_mismatch,3,actual_interference_frequency_cycles_per_symbol,0.35,baseline_m2,2,0.0315,0.0019798989873223336,0.013711313369355424,0.049288686630644576,315.0,10000,True
+frequency_mismatch,3,actual_interference_frequency_cycles_per_symbol,0.35,notch_m2,2,0.00395,0.0003535533905932735,0.0007734488159563293,0.007126551184043671,39.5,10000,True
+frequency_mismatch,4,actual_interference_frequency_cycles_per_symbol,0.36,baseline_m2,2,0.03,0.00014142135623730864,0.028729379526382538,0.031270620473617464,300.0,10000,True
+frequency_mismatch,4,actual_interference_frequency_cycles_per_symbol,0.36,notch_m2,2,0.0211,0.0012727922061357853,0.009664415737442778,0.032535584262557225,211.0,10000,True
+frequency_mismatch,5,actual_interference_frequency_cycles_per_symbol,0.37,baseline_m2,2,0.02885,0.0014849242404917507,0.015508485027016565,0.042191514972983436,288.5,10000,True
+frequency_mismatch,5,actual_interference_frequency_cycles_per_symbol,0.37,notch_m2,2,0.0319,0.00014142135623730864,0.030629379526382536,0.03317062047361746,319.0,10000,True
+frequency_mismatch,6,actual_interference_frequency_cycles_per_symbol,0.39,baseline_m2,2,0.0276,0.002687005768508879,0.0034582110012680925,0.05174178899873191,276.0,10000,True
+frequency_mismatch,6,actual_interference_frequency_cycles_per_symbol,0.39,notch_m2,2,0.0338,0.002687005768508884,0.009658211001268052,0.05794178899873194,338.0,10000,True

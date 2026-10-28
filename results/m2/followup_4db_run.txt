@@ -1,0 +1,12 @@
+Eb/N0=  4.0 dB  errors= 12791/1000000  BER=0.012791  theory=0.012500818  95% CI=[0.012571668, 0.013013161]  max_symbol_ISI=5.817e-03
+saved: results\m2\followup_4db\m2_ber_results.csv
+saved: results\m2\followup_4db\m2_experiment_config.json
+saved: results\m2\followup_4db\m2_rrc_taps.csv
+saved: results\m2\followup_4db\m2_combined_symbol_response.csv
+saved: results\m2\followup_4db\m2_diagnostic_waveforms.csv
+saved: results\m2\followup_4db\m2_ber_plot.png
+saved: results\m2\followup_4db\m2_rrc_impulse.png
+saved: results\m2\followup_4db\m2_rrc_frequency.png
+saved: results\m2\followup_4db\m2_tx_waveform.png
+saved: results\m2\followup_4db\m2_awgn_received_waveform.png
+saved: results\m2\followup_4db\m2_matched_filter_decisions.png

@@ -1,0 +1,187 @@
+{
+  "milestone": "M5",
+  "master_seed": 20261031,
+  "n_bits_per_run": 10000,
+  "repetitions": 2,
+  "overall_status": "completed",
+  "scenarios": [
+    {
+      "experiment_id": "m5_awgn_reference",
+      "configuration_id": "edd2c9ba893f07e1",
+      "scenario": "awgn_reference",
+      "overall_status": "completed",
+      "successful_receiver_rows": 10,
+      "failed_points": 0,
+      "record_count": 10,
+      "artifacts": [
+        "results\\m5\\awgn_reference\\resolved_config.json",
+        "results\\m5\\awgn_reference\\results.csv",
+        "results\\m5\\awgn_reference\\aggregate_summary.csv",
+        "results\\m5\\awgn_reference\\paired_summary.csv",
+        "results\\m5\\awgn_reference\\ber_by_condition.png",
+        "results\\m5\\awgn_reference\\run_variability.png",
+        "results\\m5\\awgn_reference\\manifest.json"
+      ],
+      "software": {
+        "python": "3.11.5",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "matplotlib": "3.11.2"
+      },
+      "output_dir": "results\\m5\\awgn_reference"
+    },
+    {
+      "experiment_id": "m5_waveform_awgn",
+      "configuration_id": "2af4a3df6da2f1e5",
+      "scenario": "waveform_awgn",
+      "overall_status": "completed",
+      "successful_receiver_rows": 8,
+      "failed_points": 0,
+      "record_count": 8,
+      "artifacts": [
+        "results\\m5\\waveform_awgn\\resolved_config.json",
+        "results\\m5\\waveform_awgn\\results.csv",
+        "results\\m5\\waveform_awgn\\aggregate_summary.csv",
+        "results\\m5\\waveform_awgn\\paired_summary.csv",
+        "results\\m5\\waveform_awgn\\ber_by_condition.png",
+        "results\\m5\\waveform_awgn\\run_variability.png",
+        "results\\m5\\waveform_awgn\\manifest.json"
+      ],
+      "software": {
+        "python": "3.11.5",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "matplotlib": "3.11.2"
+      },
+      "output_dir": "results\\m5\\waveform_awgn"
+    },
+    {
+      "experiment_id": "m5_interference_amplitude",
+      "configuration_id": "972189aa5ac5de0a",
+      "scenario": "interference_amplitude",
+      "overall_status": "completed",
+      "successful_receiver_rows": 12,
+      "failed_points": 0,
+      "record_count": 12,
+      "artifacts": [
+        "results\\m5\\interference_amplitude\\resolved_config.json",
+        "results\\m5\\interference_amplitude\\results.csv",
+        "results\\m5\\interference_amplitude\\aggregate_summary.csv",
+        "results\\m5\\interference_amplitude\\paired_summary.csv",
+        "results\\m5\\interference_amplitude\\ber_by_condition.png",
+        "results\\m5\\interference_amplitude\\run_variability.png",
+        "results\\m5\\interference_amplitude\\manifest.json"
+      ],
+      "software": {
+        "python": "3.11.5",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "matplotlib": "3.11.2"
+      },
+      "output_dir": "results\\m5\\interference_amplitude"
+    },
+    {
+      "experiment_id": "m5_interference_frequency",
+      "configuration_id": "38f4d4d089621098",
+      "scenario": "interference_frequency",
+      "overall_status": "completed",
+      "successful_receiver_rows": 10,
+      "failed_points": 0,
+      "record_count": 10,
+      "artifacts": [
+        "results\\m5\\interference_frequency\\resolved_config.json",
+        "results\\m5\\interference_frequency\\results.csv",
+        "results\\m5\\interference_frequency\\aggregate_summary.csv",
+        "results\\m5\\interference_frequency\\paired_summary.csv",
+        "results\\m5\\interference_frequency\\ber_by_condition.png",
+        "results\\m5\\interference_frequency\\run_variability.png",
+        "results\\m5\\interference_frequency\\manifest.json"
+      ],
+      "software": {
+        "python": "3.11.5",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "matplotlib": "3.11.2"
+      },
+      "output_dir": "results\\m5\\interference_frequency"
+    },
+    {
+      "experiment_id": "m5_attenuation",
+      "configuration_id": "ea2b0b24ebd2762f",
+      "scenario": "attenuation",
+      "overall_status": "completed",
+      "successful_receiver_rows": 10,
+      "failed_points": 0,
+      "record_count": 10,
+      "artifacts": [
+        "results\\m5\\attenuation\\resolved_config.json",
+        "results\\m5\\attenuation\\results.csv",
+        "results\\m5\\attenuation\\aggregate_summary.csv",
+        "results\\m5\\attenuation\\paired_summary.csv",
+        "results\\m5\\attenuation\\ber_by_condition.png",
+        "results\\m5\\attenuation\\run_variability.png",
+        "results\\m5\\attenuation\\manifest.json"
+      ],
+      "software": {
+        "python": "3.11.5",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "matplotlib": "3.11.2"
+      },
+      "output_dir": "results\\m5\\attenuation"
+    },
+    {
+      "experiment_id": "m5_receiver_comparison",
+      "configuration_id": "1ae6d6f0901dd215",
+      "scenario": "receiver_comparison",
+      "overall_status": "completed",
+      "successful_receiver_rows": 4,
+      "failed_points": 0,
+      "record_count": 4,
+      "artifacts": [
+        "results\\m5\\receiver_comparison\\resolved_config.json",
+        "results\\m5\\receiver_comparison\\results.csv",
+        "results\\m5\\receiver_comparison\\aggregate_summary.csv",
+        "results\\m5\\receiver_comparison\\paired_summary.csv",
+        "results\\m5\\receiver_comparison\\paired_per_bit_outcomes.csv",
+        "results\\m5\\receiver_comparison\\ber_by_condition.png",
+        "results\\m5\\receiver_comparison\\run_variability.png",
+        "results\\m5\\receiver_comparison\\paired_ber_difference.png",
+        "results\\m5\\receiver_comparison\\manifest.json"
+      ],
+      "software": {
+        "python": "3.11.5",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "matplotlib": "3.11.2"
+      },
+      "output_dir": "results\\m5\\receiver_comparison"
+    },
+    {
+      "experiment_id": "m5_frequency_mismatch",
+      "configuration_id": "c05da2774304437a",
+      "scenario": "frequency_mismatch",
+      "overall_status": "completed",
+      "successful_receiver_rows": 28,
+      "failed_points": 0,
+      "record_count": 28,
+      "artifacts": [
+        "results\\m5\\frequency_mismatch\\resolved_config.json",
+        "results\\m5\\frequency_mismatch\\results.csv",
+        "results\\m5\\frequency_mismatch\\aggregate_summary.csv",
+        "results\\m5\\frequency_mismatch\\paired_summary.csv",
+        "results\\m5\\frequency_mismatch\\ber_by_condition.png",
+        "results\\m5\\frequency_mismatch\\run_variability.png",
+        "results\\m5\\frequency_mismatch\\paired_ber_difference.png",
+        "results\\m5\\frequency_mismatch\\manifest.json"
+      ],
+      "software": {
+        "python": "3.11.5",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "matplotlib": "3.11.2"
+      },
+      "output_dir": "results\\m5\\frequency_mismatch"
+    }
+  ]
+}

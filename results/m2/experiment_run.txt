@@ -1,0 +1,16 @@
+Eb/N0=  0.0 dB  errors=  7730/100000  BER=0.0773  theory=0.078649604  95% CI=[0.075652009, 0.078972557]  max_symbol_ISI=5.817e-03
+Eb/N0=  2.0 dB  errors=  3835/100000  BER=0.03835  theory=0.037506128  95% CI=[0.037168153, 0.039558719]  max_symbol_ISI=5.817e-03
+Eb/N0=  4.0 dB  errors=  1334/100000  BER=0.01334  theory=0.012500818  95% CI=[0.012638076, 0.014070356]  max_symbol_ISI=5.817e-03
+Eb/N0=  6.0 dB  errors=   234/100000  BER=0.00234  theory=0.0023882908  95% CI=[0.0020500515, 0.0026593878]  max_symbol_ISI=5.817e-03
+Eb/N0=  8.0 dB  errors=    18/100000  BER=0.00018  theory=0.00019090777  95% CI=[0.00010668279, 0.00028446274]  max_symbol_ISI=5.817e-03
+saved: results\m2\m2_ber_results.csv
+saved: results\m2\m2_experiment_config.json
+saved: results\m2\m2_rrc_taps.csv
+saved: results\m2\m2_combined_symbol_response.csv
+saved: results\m2\m2_diagnostic_waveforms.csv
+saved: results\m2\m2_ber_plot.png
+saved: results\m2\m2_rrc_impulse.png
+saved: results\m2\m2_rrc_frequency.png
+saved: results\m2\m2_tx_waveform.png
+saved: results\m2\m2_awgn_received_waveform.png
+saved: results\m2\m2_matched_filter_decisions.png

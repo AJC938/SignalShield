@@ -1,0 +1,23 @@
+{
+  "experiment_id": "m5_interference_amplitude",
+  "configuration_id": "972189aa5ac5de0a",
+  "scenario": "interference_amplitude",
+  "overall_status": "completed",
+  "successful_receiver_rows": 12,
+  "failed_points": 0,
+  "record_count": 12,
+  "artifacts": [
+    "results\\m5\\interference_amplitude\\resolved_config.json",
+    "results\\m5\\interference_amplitude\\results.csv",
+    "results\\m5\\interference_amplitude\\aggregate_summary.csv",
+    "results\\m5\\interference_amplitude\\paired_summary.csv",
+    "results\\m5\\interference_amplitude\\ber_by_condition.png",
+    "results\\m5\\interference_amplitude\\run_variability.png"
+  ],
+  "software": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  }
+}

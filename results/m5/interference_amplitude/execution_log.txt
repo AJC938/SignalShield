@@ -1,0 +1,24 @@
+experiment_id=m5_interference_amplitude
+scenario=interference_amplitude
+configuration_id=972189aa5ac5de0a
+master_seed=20261031; repetitions=2; n_bits=10000
+status=success scenario=interference_amplitude repetition=0 point=0:interference_amplitude_peak=0.0 receiver=baseline_m2 errors=22/10000 BER=0.0022 seed_bit=58422278 seed_noise=1661716353
+status=success scenario=interference_amplitude repetition=0 point=1:interference_amplitude_peak=0.08 receiver=baseline_m2 errors=45/10000 BER=0.0045 seed_bit=58422278 seed_noise=1661716353
+status=success scenario=interference_amplitude repetition=0 point=2:interference_amplitude_peak=0.16 receiver=baseline_m2 errors=148/10000 BER=0.0148 seed_bit=58422278 seed_noise=1661716353
+status=success scenario=interference_amplitude repetition=0 point=3:interference_amplitude_peak=0.22 receiver=baseline_m2 errors=306/10000 BER=0.0306 seed_bit=58422278 seed_noise=1661716353
+status=success scenario=interference_amplitude repetition=0 point=4:interference_amplitude_peak=0.3 receiver=baseline_m2 errors=725/10000 BER=0.0725 seed_bit=58422278 seed_noise=1661716353
+status=success scenario=interference_amplitude repetition=0 point=5:interference_amplitude_peak=0.42 receiver=baseline_m2 errors=1702/10000 BER=0.1702 seed_bit=58422278 seed_noise=1661716353
+status=success scenario=interference_amplitude repetition=1 point=0:interference_amplitude_peak=0.0 receiver=baseline_m2 errors=34/10000 BER=0.0034 seed_bit=3921254183 seed_noise=545064145
+status=success scenario=interference_amplitude repetition=1 point=1:interference_amplitude_peak=0.08 receiver=baseline_m2 errors=61/10000 BER=0.0061 seed_bit=3921254183 seed_noise=545064145
+status=success scenario=interference_amplitude repetition=1 point=2:interference_amplitude_peak=0.16 receiver=baseline_m2 errors=153/10000 BER=0.0153 seed_bit=3921254183 seed_noise=545064145
+status=success scenario=interference_amplitude repetition=1 point=3:interference_amplitude_peak=0.22 receiver=baseline_m2 errors=337/10000 BER=0.0337 seed_bit=3921254183 seed_noise=545064145
+status=success scenario=interference_amplitude repetition=1 point=4:interference_amplitude_peak=0.3 receiver=baseline_m2 errors=760/10000 BER=0.076 seed_bit=3921254183 seed_noise=545064145
+status=success scenario=interference_amplitude repetition=1 point=5:interference_amplitude_peak=0.42 receiver=baseline_m2 errors=1670/10000 BER=0.167 seed_bit=3921254183 seed_noise=545064145
+overall_status=completed; failed_points=0
+saved=results\m5\interference_amplitude\resolved_config.json
+saved=results\m5\interference_amplitude\results.csv
+saved=results\m5\interference_amplitude\aggregate_summary.csv
+saved=results\m5\interference_amplitude\paired_summary.csv
+saved=results\m5\interference_amplitude\ber_by_condition.png
+saved=results\m5\interference_amplitude\run_variability.png
+saved=results\m5\interference_amplitude\manifest.json

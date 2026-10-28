@@ -1,0 +1,18 @@
+experiment_id=m6_final_long_awgn_reference
+scenario=awgn_reference
+configuration_id=cd410eed8cd51916
+master_seed=20261030; repetitions=2; n_bits=50000
+status=success scenario=awgn_reference repetition=0 point=0:ebn0_db=0.0 receiver=baseline_m1 errors=3998/50000 BER=0.07996 seed_bit=3972102654 seed_noise=26732348
+status=success scenario=awgn_reference repetition=0 point=1:ebn0_db=4.0 receiver=baseline_m1 errors=580/50000 BER=0.0116 seed_bit=3972102654 seed_noise=1815188047
+status=success scenario=awgn_reference repetition=0 point=2:ebn0_db=8.0 receiver=baseline_m1 errors=8/50000 BER=0.00016 seed_bit=3972102654 seed_noise=1389373281
+status=success scenario=awgn_reference repetition=1 point=0:ebn0_db=0.0 receiver=baseline_m1 errors=3901/50000 BER=0.07802 seed_bit=101527326 seed_noise=2845900141
+status=success scenario=awgn_reference repetition=1 point=1:ebn0_db=4.0 receiver=baseline_m1 errors=653/50000 BER=0.01306 seed_bit=101527326 seed_noise=2204812285
+status=success scenario=awgn_reference repetition=1 point=2:ebn0_db=8.0 receiver=baseline_m1 errors=11/50000 BER=0.00022 seed_bit=101527326 seed_noise=3798293102
+overall_status=completed; failed_points=0
+saved=.\results\m6\validation\long_run_reproduction\resolved_config.json
+saved=.\results\m6\validation\long_run_reproduction\results.csv
+saved=.\results\m6\validation\long_run_reproduction\aggregate_summary.csv
+saved=.\results\m6\validation\long_run_reproduction\paired_summary.csv
+saved=.\results\m6\validation\long_run_reproduction\ber_by_condition.png
+saved=.\results\m6\validation\long_run_reproduction\run_variability.png
+saved=.\results\m6\validation\long_run_reproduction\manifest.json

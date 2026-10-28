@@ -1,0 +1,22 @@
+experiment_id=m5_awgn_reference
+scenario=awgn_reference
+configuration_id=edd2c9ba893f07e1
+master_seed=20261031; repetitions=2; n_bits=10000
+status=success scenario=awgn_reference repetition=0 point=0:ebn0_db=0.0 receiver=baseline_m1 errors=748/10000 BER=0.0748 seed_bit=2626894955 seed_noise=1735215749
+status=success scenario=awgn_reference repetition=0 point=1:ebn0_db=2.0 receiver=baseline_m1 errors=356/10000 BER=0.0356 seed_bit=2626894955 seed_noise=3525819526
+status=success scenario=awgn_reference repetition=0 point=2:ebn0_db=4.0 receiver=baseline_m1 errors=104/10000 BER=0.0104 seed_bit=2626894955 seed_noise=2410348240
+status=success scenario=awgn_reference repetition=0 point=3:ebn0_db=6.0 receiver=baseline_m1 errors=27/10000 BER=0.0027 seed_bit=2626894955 seed_noise=2869279750
+status=success scenario=awgn_reference repetition=0 point=4:ebn0_db=8.0 receiver=baseline_m1 errors=1/10000 BER=0.0001 seed_bit=2626894955 seed_noise=4078060139
+status=success scenario=awgn_reference repetition=1 point=0:ebn0_db=0.0 receiver=baseline_m1 errors=785/10000 BER=0.0785 seed_bit=3171283284 seed_noise=4012138210
+status=success scenario=awgn_reference repetition=1 point=1:ebn0_db=2.0 receiver=baseline_m1 errors=412/10000 BER=0.0412 seed_bit=3171283284 seed_noise=1342990889
+status=success scenario=awgn_reference repetition=1 point=2:ebn0_db=4.0 receiver=baseline_m1 errors=136/10000 BER=0.0136 seed_bit=3171283284 seed_noise=4134593679
+status=success scenario=awgn_reference repetition=1 point=3:ebn0_db=6.0 receiver=baseline_m1 errors=20/10000 BER=0.002 seed_bit=3171283284 seed_noise=601839219
+status=success scenario=awgn_reference repetition=1 point=4:ebn0_db=8.0 receiver=baseline_m1 errors=2/10000 BER=0.0002 seed_bit=3171283284 seed_noise=2611972892
+overall_status=completed; failed_points=0
+saved=results\m5\awgn_reference\resolved_config.json
+saved=results\m5\awgn_reference\results.csv
+saved=results\m5\awgn_reference\aggregate_summary.csv
+saved=results\m5\awgn_reference\paired_summary.csv
+saved=results\m5\awgn_reference\ber_by_condition.png
+saved=results\m5\awgn_reference\run_variability.png
+saved=results\m5\awgn_reference\manifest.json

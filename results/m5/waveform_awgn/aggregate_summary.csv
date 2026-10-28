@@ -1,0 +1,5 @@
+scenario,scenario_point_index,scenario_parameter,scenario_value,receiver_id,n_repetitions,mean_run_ber,between_run_ber_standard_deviation,mean_run_ber_t_ci_lower,mean_run_ber_t_ci_upper,mean_errors_per_run,bits_per_run,per_run_binomial_intervals_retained_in_results_csv
+waveform_awgn,0,ebn0_db,2.0,baseline_m2,2,0.03905,0.00021213203435596541,0.03714406928957378,0.04095593071042622,390.5,10000,True
+waveform_awgn,1,ebn0_db,4.0,baseline_m2,2,0.0112,0.0007071067811865482,0.004846897631912647,0.017553102368087353,112.0,10000,True
+waveform_awgn,2,ebn0_db,6.0,baseline_m2,2,0.00245,7.071067811865494e-05,0.0018146897631912636,0.003085310236808736,24.5,10000,True
+waveform_awgn,3,ebn0_db,8.0,baseline_m2,2,0.00030000000000000003,0.000282842712474619,0.0,0.0028412409472349386,3.0,10000,True

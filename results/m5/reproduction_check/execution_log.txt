@@ -1,0 +1,18 @@
+experiment_id=m5_receiver_comparison
+scenario=receiver_comparison
+configuration_id=1ae6d6f0901dd215
+master_seed=20261031; repetitions=2; n_bits=10000
+status=success scenario=receiver_comparison repetition=0 point=0:interference_frequency_cycles_per_symbol=0.35 receiver=baseline_m2 errors=303/10000 BER=0.0303 seed_bit=1816369441 seed_noise=3572212284
+status=success scenario=receiver_comparison repetition=0 point=0:interference_frequency_cycles_per_symbol=0.35 receiver=notch_m2 errors=34/10000 BER=0.0034 seed_bit=1816369441 seed_noise=3572212284
+status=success scenario=receiver_comparison repetition=1 point=0:interference_frequency_cycles_per_symbol=0.35 receiver=baseline_m2 errors=316/10000 BER=0.0316 seed_bit=1469197548 seed_noise=160668301
+status=success scenario=receiver_comparison repetition=1 point=0:interference_frequency_cycles_per_symbol=0.35 receiver=notch_m2 errors=52/10000 BER=0.0052 seed_bit=1469197548 seed_noise=160668301
+overall_status=completed; failed_points=0
+saved=results\m5\reproduction_check\resolved_config.json
+saved=results\m5\reproduction_check\results.csv
+saved=results\m5\reproduction_check\aggregate_summary.csv
+saved=results\m5\reproduction_check\paired_summary.csv
+saved=results\m5\reproduction_check\paired_per_bit_outcomes.csv
+saved=results\m5\reproduction_check\ber_by_condition.png
+saved=results\m5\reproduction_check\run_variability.png
+saved=results\m5\reproduction_check\paired_ber_difference.png
+saved=results\m5\reproduction_check\manifest.json

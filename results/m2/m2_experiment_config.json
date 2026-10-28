@@ -1,0 +1,152 @@
+{
+  "experiment": "M2 pulse-shaped coherent BPSK over real AWGN",
+  "bit_mapping": {
+    "0": "+sqrt(Eb)",
+    "1": "-sqrt(Eb)"
+  },
+  "sampling": {
+    "samples_per_symbol": 8,
+    "span_symbols": 10,
+    "rolloff": 0.35,
+    "tap_count": 81,
+    "tap_energy": 1.0,
+    "tx_group_delay_samples": 40,
+    "rx_group_delay_samples": 40,
+    "total_decision_delay_samples": 80,
+    "decision_index_rule": "2*D + k*samples_per_symbol, k=0,...,n_symbols-1",
+    "convolution": "full linear convolution; no circular wrap; preserve FIR tails",
+    "upsampled_length": "(n_symbols-1)*samples_per_symbol + 1",
+    "transmit_waveform_length": "(n_symbols-1)*samples_per_symbol + tap_count"
+  },
+  "noise_model": {
+    "domain": "real iid discrete waveform samples",
+    "variance_per_sample": "Eb / (2 * 10**(EbN0_dB / 10))",
+    "matched_filter_variance": "sample_variance * sum(receive_taps**2); equals sample_variance for unit-energy taps",
+    "physical_psd_claim": false
+  },
+  "ber_reference": "0.5*erfc(sqrt(Eb/N0)); finite RRC truncation adds measured residual ISI",
+  "master_seed": 20261028,
+  "seed_strategy": "SeedSequence(master_seed) spawns one bit/noise pair per sweep point; additional child pair is reserved for diagnostic waveforms; all derived seeds are saved.",
+  "fixed_bit_count_per_snr": 100000,
+  "points": [
+    {
+      "ebn0_db": 0.0,
+      "bit_energy": 1.0,
+      "n_bits": 100000,
+      "bit_seed": 1385525736,
+      "noise_seed": 1043372047
+    },
+    {
+      "ebn0_db": 2.0,
+      "bit_energy": 1.0,
+      "n_bits": 100000,
+      "bit_seed": 1886616241,
+      "noise_seed": 1273950289
+    },
+    {
+      "ebn0_db": 4.0,
+      "bit_energy": 1.0,
+      "n_bits": 100000,
+      "bit_seed": 1584872722,
+      "noise_seed": 2936990722
+    },
+    {
+      "ebn0_db": 6.0,
+      "bit_energy": 1.0,
+      "n_bits": 100000,
+      "bit_seed": 3684155100,
+      "noise_seed": 3317853687
+    },
+    {
+      "ebn0_db": 8.0,
+      "bit_energy": 1.0,
+      "n_bits": 100000,
+      "bit_seed": 830393163,
+      "noise_seed": 1162398356
+    }
+  ],
+  "diagnostics": {
+    "n_symbols": 16,
+    "ebn0_db": 4.0,
+    "bit_seed": 3134576792,
+    "noise_seed": 3585449958,
+    "tx_delay_samples": 40,
+    "rx_delay_samples": 40,
+    "total_decision_delay_samples": 80,
+    "decision_indices": [
+      80,
+      88,
+      96,
+      104,
+      112,
+      120,
+      128,
+      136,
+      144,
+      152,
+      160,
+      168,
+      176,
+      184,
+      192,
+      200
+    ]
+  },
+  "combined_filter": {
+    "main_sample": 1.0,
+    "max_abs_symbol_spaced_sidelobe": 0.005816568303543849,
+    "sum_abs_symbol_spaced_sidelobes": 0.020364309246394197,
+    "symbol_offsets": [
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "symbol_spaced_values": [
+      7.0372710194848454e-06,
+      4.7537542629302415e-05,
+      -0.00017596804333531662,
+      -5.866639066725089e-05,
+      0.001703555844795538,
+      -0.005816568303543849,
+      0.0013891386458602514,
+      -0.0006940353087682877,
+      0.00017071475676494824,
+      0.00011893251581286904,
+      1.0,
+      0.00011893251581286904,
+      0.00017071475676494824,
+      -0.0006940353087682877,
+      0.0013891386458602514,
+      -0.005816568303543849,
+      0.001703555844795538,
+      -5.866639066725089e-05,
+      -0.00017596804333531662,
+      4.7537542629302415e-05,
+      7.0372710194848454e-06
+    ]
+  },
+  "software": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  }
+}

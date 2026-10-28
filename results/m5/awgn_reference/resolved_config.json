@@ -1,0 +1,31 @@
+{
+  "experiment_id": "m5_awgn_reference",
+  "scenario": "awgn_reference",
+  "n_bits": 10000,
+  "master_seed": 20261031,
+  "repetitions": 2,
+  "ebn0_db": 6.0,
+  "ebn0_values_db": [
+    0.0,
+    2.0,
+    4.0,
+    6.0,
+    8.0
+  ],
+  "sweep_values": [],
+  "samples_per_symbol": 8,
+  "rolloff": 0.35,
+  "span_symbols": 10,
+  "attenuation_db": 0.0,
+  "interference_amplitude": 0.22,
+  "interference_frequency_cycles_per_symbol": 0.35,
+  "interference_phase_rad": 0.37,
+  "notch_center_cycles_per_symbol": 0.35,
+  "notch_quality_factor": 30.0,
+  "confidence_level": 0.95,
+  "bootstrap_block_length": 50,
+  "alternate_block_length": 100,
+  "bootstrap_replicates": 1000,
+  "save_paired_outcomes": true,
+  "output_dir": "results\\m5\\awgn_reference"
+}

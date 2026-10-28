@@ -1,0 +1,72 @@
+{
+  "case": "baseline_notch_same_realization",
+  "status": "completed",
+  "configuration_id": "800cb94d8086cb32",
+  "config": {
+    "message": "SignalShield verifies an actual UTF-8 payload through BPSK modulation, root-raised-cosine pulse shaping, a sampled channel, matched filtering, and byte reconstruction. This is a digital simulation, not a physical radio.",
+    "utf8_bytes_hex": "5369676e616c536869656c6420766572696669657320616e2061637475616c205554462d38207061796c6f6164207468726f756768204250534b206d6f64756c6174696f6e2c20726f6f742d7261697365642d636f73696e652070756c73652073686170696e672c20612073616d706c6564206368616e6e656c2c206d6174636865642066696c746572696e672c20616e642062797465207265636f6e737472756374696f6e2e20546869732069732061206469676974616c2073696d756c6174696f6e2c206e6f74206120706879736963616c20726164696f2e",
+    "payload_bit_count": 1752,
+    "seed": 606,
+    "awgn_enabled": true,
+    "ebn0_db": 6.0,
+    "noise_variance": 0.125594321575479,
+    "interference_enabled": true,
+    "interference_amplitude_peak": 0.32,
+    "interference_frequency_cycles_per_symbol": 0.35,
+    "interference_phase_rad": 1.2,
+    "attenuation_db": 0.0,
+    "desired_voltage_gain": 1.0,
+    "receiver": "Both (paired comparison)",
+    "notch_center_cycles_per_symbol": 0.35,
+    "notch_quality_factor": 30.0,
+    "samples_per_symbol": 8,
+    "rolloff": 0.35,
+    "span_symbols": 10,
+    "tx_waveform_samples": 14089,
+    "rx_waveform_samples": 14089
+  },
+  "receivers": [
+    {
+      "receiver": "Baseline Receiver",
+      "bits_evaluated": 1752,
+      "errors": 137,
+      "payload_ber": 0.07819634703196347,
+      "confidence_interval_95_pointwise": [
+        0.06605389426433902,
+        0.09177267772728845
+      ],
+      "zero_error_upper95": null,
+      "decoded_text": null,
+      "decode_error": "Recovered bytes are not valid UTF-8 (invalid continuation byte at byte 2).",
+      "exact_message_recovery": false
+    },
+    {
+      "receiver": "Notch-Filtered Receiver",
+      "bits_evaluated": 1752,
+      "errors": 4,
+      "payload_ber": 0.00228310502283105,
+      "confidence_interval_95_pointwise": [
+        0.0006224087050831947,
+        0.0058352499661481864
+      ],
+      "zero_error_upper95": null,
+      "decoded_text": "SignalShield verifies an actual UTF-8 paqload through BPSK modulation, root-raised-cosine pulse shaping, a sampled chqnnel, matched filtering, and byte reconstruction. This is a digital simuladion, not a phqsical radio.",
+      "decode_error": null,
+      "exact_message_recovery": false
+    }
+  ],
+  "paired_comparison": {
+    "ber_difference_notch_minus_baseline": -0.07591324200913242,
+    "corrected_errors": 135,
+    "introduced_errors": 2,
+    "shared_errors": 2,
+    "unchanged_decisions": 1615,
+    "interference_attenuation_db": -27.25675501300345,
+    "desired_signal_rms_gain_after_notch": 0.9688936342102096,
+    "desired_signal_relative_rms_distortion": 0.13585355669116042,
+    "same_transmitted_bits": 1,
+    "same_transmitted_waveform": 1,
+    "same_channel_realization": 1,
+    "same_received_waveform": 1
+  }
+}

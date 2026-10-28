@@ -1,0 +1,9 @@
+Eb/N0=  0.0 dB  errors= 15692/200000  BER=0.07846  theory=0.078649604  95% CI=[0.077285157, 0.079647078]
+Eb/N0=  2.0 dB  errors=  7449/200000  BER=0.037245  theory=0.037506128  95% CI=[0.036419314, 0.038084133]
+Eb/N0=  4.0 dB  errors=  2418/200000  BER=0.01209  theory=0.012500818  95% CI=[0.011615615, 0.012578604]
+Eb/N0=  6.0 dB  errors=   485/200000  BER=0.002425  theory=0.0023882908  95% CI=[0.0022141837, 0.0026504378]
+Eb/N0=  8.0 dB  errors=    35/200000  BER=0.000175  theory=0.00019090777  95% CI=[0.00012189684, 0.00024337432]
+Eb/N0= 10.0 dB  errors=     0/200000  BER=0  theory=3.8721082e-06  95% CI=[0, 1.8444227e-05]
+saved: results\m1\m1_ber_results.csv
+saved: results\m1\m1_experiment_config.json
+saved: results\m1\m1_ber_plot.png

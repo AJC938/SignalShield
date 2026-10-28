@@ -1,0 +1,33 @@
+{
+  "method": "streamlit.testing.v1.AppTest; browserless widget/script interaction",
+  "tabs": [
+    "Message Transmission",
+    "Channel & Receiver Analysis",
+    "Performance Lab"
+  ],
+  "message_form_execution": "PASS",
+  "message_metrics": [
+    {
+      "label": "Recovered bits",
+      "value": "136"
+    },
+    {
+      "label": "Bit errors",
+      "value": "0"
+    },
+    {
+      "label": "Payload BER",
+      "value": "0"
+    }
+  ],
+  "performance_lab_execution": "PASS",
+  "table_count": 1,
+  "streamlit_exceptions": [],
+  "status": "PASS",
+  "performance_output_directories": [
+    "results/m6/performance/awgn_reference_seed20261028_20261028_022206_129269",
+    "results/m6/performance/awgn_reference_seed20261028_20261028_022405_496590",
+    "results/m6/performance/awgn_reference_seed20261028_20261028_022414_464799"
+  ],
+  "performance_manifests_completed": true
+}

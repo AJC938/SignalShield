@@ -1,0 +1,23 @@
+{
+  "experiment_id": "m6_final_long_awgn_reference",
+  "configuration_id": "cd410eed8cd51916",
+  "scenario": "awgn_reference",
+  "overall_status": "completed",
+  "successful_receiver_rows": 6,
+  "failed_points": 0,
+  "record_count": 6,
+  "artifacts": [
+    "results/m6/validation/long_run_reproduction/resolved_config.json",
+    "results/m6/validation/long_run_reproduction/results.csv",
+    "results/m6/validation/long_run_reproduction/aggregate_summary.csv",
+    "results/m6/validation/long_run_reproduction/paired_summary.csv",
+    "results/m6/validation/long_run_reproduction/ber_by_condition.png",
+    "results/m6/validation/long_run_reproduction/run_variability.png"
+  ],
+  "software": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  }
+}

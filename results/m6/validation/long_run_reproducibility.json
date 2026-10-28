@@ -1,0 +1,13 @@
+{
+  "scenario": "awgn_reference",
+  "primary_configuration_id": "cd410eed8cd51916",
+  "replay_configuration_id": "cd410eed8cd51916",
+  "primary_status": "completed",
+  "replay_status": "completed",
+  "raw_csv_exact_match_excluding_runtime": true,
+  "raw_csv_fields_compared": 336,
+  "aggregate_csv_exact_match": true,
+  "aggregate_csv_fields_compared": 39,
+  "plot_files_regenerated": true,
+  "config_load_and_replay": "PASS"
+}

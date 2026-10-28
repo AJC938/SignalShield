@@ -1,0 +1,5 @@
+experiment,attenuation_db,gain,n_bits,errors,ber,ci95_lower,ci95_upper,noise_enabled,interference_enabled,received_waveform_length
+noiseless_attenuation,0.0,1.0,30000,0,0.0,0.0,0.00012295508887385758,False,False,240073
+noiseless_attenuation,2.0,0.7943282347242815,30000,0,0.0,0.0,0.00012295508887385758,False,False,240073
+noiseless_attenuation,4.0,0.6309573444801932,30000,0,0.0,0.0,0.00012295508887385758,False,False,240073
+noiseless_attenuation,8.0,0.3981071705534972,30000,0,0.0,0.0,0.00012295508887385758,False,False,240073

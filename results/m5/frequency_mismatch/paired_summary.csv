@@ -1,0 +1,8 @@
+scenario,scenario_point_index,scenario_parameter,scenario_value,n_repetitions,mean_paired_delta_candidate_minus_baseline,between_run_delta_standard_deviation,mean_delta_t_ci_lower,mean_delta_t_ci_upper
+frequency_mismatch,0,actual_interference_frequency_cycles_per_symbol,0.31,2,0.007800000000000001,0.0018384776310850222,-0.00871806615702709,0.024318066157027092
+frequency_mismatch,1,actual_interference_frequency_cycles_per_symbol,0.33,2,0.004750000000000001,0.001202081528017131,-0.00605027402574849,0.015550274025748491
+frequency_mismatch,2,actual_interference_frequency_cycles_per_symbol,0.34,2,-0.0081,0.0007071067811865482,-0.014453102368087351,-0.001746897631912647
+frequency_mismatch,3,actual_interference_frequency_cycles_per_symbol,0.35,2,-0.027549999999999998,0.0016263455967290594,-0.0421621354466009,-0.012937864553399101
+frequency_mismatch,4,actual_interference_frequency_cycles_per_symbol,0.36,2,-0.0089,0.0014142135623730937,-0.02160620473617468,0.0038062047361746808
+frequency_mismatch,5,actual_interference_frequency_cycles_per_symbol,0.37,2,0.0030500000000000024,0.0016263455967290594,-0.011562135446600895,0.017662135446600898
+frequency_mismatch,6,actual_interference_frequency_cycles_per_symbol,0.39,2,0.006200000000000001,4.9065389333867974e-18,0.006199999999999956,0.006200000000000045

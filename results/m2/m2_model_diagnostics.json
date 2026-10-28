@@ -1,0 +1,28 @@
+{
+  "purpose": "Independent sample-noise/matched-filter diagnostic; same method as test_matched_filter_noise_variance_remains_sigma_squared",
+  "seed": 99012,
+  "n_symbols": 20000,
+  "samples_per_symbol": 8,
+  "rolloff": 0.35,
+  "span_symbols": 10,
+  "tap_count": 81,
+  "tap_energy": 1.0,
+  "tx_delay_samples": 40,
+  "rx_delay_samples": 40,
+  "total_delay_samples": 80,
+  "decision_index_start": 80,
+  "decision_index_step": 8,
+  "ebn0_db": 4.0,
+  "configured_input_noise_variance": 0.19905358527674863,
+  "measured_matched_filter_sample_mean": -0.0008635190068586489,
+  "measured_matched_filter_sample_variance": 0.20202754633413186,
+  "main_cascade_sample": 1.0,
+  "max_absolute_symbol_spaced_sidelobe": 0.005816568303543849,
+  "sum_absolute_symbol_spaced_sidelobes": 0.020364309246394197,
+  "software": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  }
+}

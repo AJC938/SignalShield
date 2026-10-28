@@ -1,0 +1,23 @@
+usage: signalshield-m5 [-h] [--config CONFIG]
+                       [--scenario {awgn_reference,waveform_awgn,interference_amplitude,interference_frequency,attenuation,receiver_comparison,frequency_mismatch,all}]
+                       [--experiment-id EXPERIMENT_ID] [--n-bits N_BITS]
+                       [--repetitions REPETITIONS] [--seed SEED]
+                       [--ebn0-values EBN0_VALUES [EBN0_VALUES ...]]
+                       [--values VALUES [VALUES ...]]
+                       [--output-dir OUTPUT_DIR]
+                       [--confidence-level CONFIDENCE_LEVEL]
+
+Unified SignalShield experiment runner (M5).
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG       Load a previously saved resolved JSON configuration.
+  --scenario {awgn_reference,waveform_awgn,interference_amplitude,interference_frequency,attenuation,receiver_comparison,frequency_mismatch,all}
+  --experiment-id EXPERIMENT_ID
+  --n-bits N_BITS
+  --repetitions REPETITIONS
+  --seed SEED
+  --ebn0-values EBN0_VALUES [EBN0_VALUES ...]
+  --values VALUES [VALUES ...]
+  --output-dir OUTPUT_DIR
+  --confidence-level CONFIDENCE_LEVEL

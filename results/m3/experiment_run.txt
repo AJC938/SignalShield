@@ -1,0 +1,42 @@
+M3 experiment runtime: 1.924 s
+saved: results\m3\m3_awgn_baseline_ber.png
+saved: results\m3\m3_ber_vs_interference_amplitude.png
+saved: results\m3\m3_ber_vs_interference_frequency.png
+saved: results\m3\m3_ber_vs_attenuation.png
+saved: results\m3\m3_transmit_receive_time.png
+saved: results\m3\m3_interference_time_spectrum.png
+saved: results\m3\m3_transmit_receive_spectrum.png
+saved: results\m3\m3_awgn_vs_combined.png
+saved: results\m3\m3_awgn_baseline.csv
+saved: results\m3\m3_interference_amplitude.csv
+saved: results\m3\m3_interference_frequency.csv
+saved: results\m3\m3_attenuation.csv
+saved: results\m3\m3_noiseless_attenuation.csv
+saved: results\m3\m3_combined_channel.csv
+saved: results\m3\m3_diagnostic_waveforms.csv
+saved: results\m3\m3_experiment_config.json
+awgn_baseline: Eb/N0=0.0 dB attenuation=0.0 dB tone=0.0 peak @ cycles/symbol errors=2287/30000 BER=0.07623333 95% CI=[0.0732549,0.07929413]
+awgn_baseline: Eb/N0=2.0 dB attenuation=0.0 dB tone=0.0 peak @ cycles/symbol errors=1098/30000 BER=0.0366 95% CI=[0.03450344,0.03878689]
+awgn_baseline: Eb/N0=4.0 dB attenuation=0.0 dB tone=0.0 peak @ cycles/symbol errors=425/30000 BER=0.01416667 95% CI=[0.01285992,0.01556869]
+awgn_baseline: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.0 peak @ cycles/symbol errors=80/30000 BER=0.002666667 95% CI=[0.00211505,0.003317815]
+awgn_baseline: Eb/N0=8.0 dB attenuation=0.0 dB tone=0.0 peak @ cycles/symbol errors=5/30000 BER=0.0001666667 95% CI=[5.411836e-05,0.0003889012]
+interference_amplitude: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.0 peak @ cycles/symbol errors=84/30000 BER=0.0028 95% CI=[0.002233986,0.003465435]
+interference_amplitude: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.08 peak @0.7 cycles/symbol errors=86/30000 BER=0.002866667 95% CI=[0.002293583,0.003539117]
+interference_amplitude: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.16 peak @0.7 cycles/symbol errors=86/30000 BER=0.002866667 95% CI=[0.002293583,0.003539117]
+interference_amplitude: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.28 peak @0.7 cycles/symbol errors=87/30000 BER=0.0029 95% CI=[0.002323413,0.003575928]
+interference_amplitude: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.42 peak @0.7 cycles/symbol errors=86/30000 BER=0.002866667 95% CI=[0.002293583,0.003539117]
+interference_frequency: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.22 peak @0.15 cycles/symbol errors=1024/30000 BER=0.03413333 95% CI=[0.03210725,0.03625027]
+interference_frequency: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.22 peak @0.35 cycles/symbol errors=919/30000 BER=0.03063333 95% CI=[0.02871225,0.032646]
+interference_frequency: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.22 peak @0.7 cycles/symbol errors=58/30000 BER=0.001933333 95% CI=[0.001468378,0.002498574]
+interference_frequency: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.22 peak @1.1 cycles/symbol errors=59/30000 BER=0.001966667 95% CI=[0.001497445,0.002536133]
+interference_frequency: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.22 peak @1.6 cycles/symbol errors=59/30000 BER=0.001966667 95% CI=[0.001497445,0.002536133]
+attenuation: Eb/N0=6.0 dB attenuation=0.0 dB tone=0.0 peak @ cycles/symbol errors=60/30000 BER=0.002 95% CI=[0.001526547,0.002573657]
+attenuation: Eb/N0=6.0 dB attenuation=2.0 dB tone=0.0 peak @ cycles/symbol errors=357/30000 BER=0.0119 95% CI=[0.01070373,0.01319213]
+attenuation: Eb/N0=6.0 dB attenuation=4.0 dB tone=0.0 peak @ cycles/symbol errors=1160/30000 BER=0.03866667 95% CI=[0.03651309,0.04091016]
+attenuation: Eb/N0=6.0 dB attenuation=6.0 dB tone=0.0 peak @ cycles/symbol errors=2370/30000 BER=0.079 95% CI=[0.07597188,0.08210994]
+attenuation: Eb/N0=6.0 dB attenuation=8.0 dB tone=0.0 peak @ cycles/symbol errors=3900/30000 BER=0.13 95% CI=[0.1262137,0.1338581]
+noiseless_attenuation: attenuation=0.0 dB errors=0/30000 BER=0
+noiseless_attenuation: attenuation=2.0 dB errors=0/30000 BER=0
+noiseless_attenuation: attenuation=4.0 dB errors=0/30000 BER=0
+noiseless_attenuation: attenuation=8.0 dB errors=0/30000 BER=0
+combined_awgn_tone_attenuation: Eb/N0=6.0 dB attenuation=2.0 dB tone=0.22 peak @0.7 cycles/symbol errors=385/30000 BER=0.01283333 95% CI=[0.01159035,0.01417193]

@@ -1,0 +1,48 @@
+{
+  "milestone": "M4",
+  "master_seed": 20261030,
+  "seed_strategy": "One fixed bit sequence; each experiment has a fixed noise seed shared across both receiver branches and across its sweep; bootstrap streams are explicit and separate.",
+  "primary_configuration": {
+    "n_bits": 30000,
+    "bit_seed": 1306115188,
+    "noise_seed_main": 380539748,
+    "ebn0_db": 6.0,
+    "samples_per_symbol": 8,
+    "rrc_rolloff": 0.35,
+    "rrc_span_symbols": 10,
+    "tone_amplitude_peak": 0.22,
+    "tone_frequency_cycles_per_symbol": 0.35,
+    "tone_phase_rad": 0.37,
+    "notch_center_cycles_per_symbol": 0.35,
+    "notch_quality_factor": 30.0
+  },
+  "receiver_paths": {
+    "baseline": "same M2 matched filter + delay-aware sampling + existing BPSK detector",
+    "candidate": "offline filtfilt notch then same M2 receiver",
+    "same_received_waveform": true
+  },
+  "filtering": {
+    "design": "scipy.signal.iirnotch second order",
+    "frequency_units": "cycles/symbol; fs=samples_per_symbol",
+    "processing": "scipy.signal.filtfilt, odd padding, explicit padlen=9",
+    "causal": false,
+    "minimum_input_length_samples": 10,
+    "quality_factor_supported_range": [
+      0.5,
+      1000
+    ]
+  },
+  "statistical_methods": {
+    "ber_interval": "two-sided 95% Clopper-Pearson",
+    "paired_difference": "candidate minus baseline; contiguous 50-bit block bootstrap, 1000 replicates",
+    "paired_test": "exact two-sided McNemar test; independence assumption noted"
+  },
+  "files": [
+    "m4_receiver_comparison.csv",
+    "m4_interference_amplitude_sweep.csv",
+    "m4_frequency_mismatch_sweep.csv",
+    "m4_notch_frequency_response.csv",
+    "m4_filter_diagnostics.json",
+    "m4_filter_diagnostic_waveforms.csv"
+  ]
+}

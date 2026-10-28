@@ -1,0 +1,62 @@
+{
+  "experiment": "M1 coherent BPSK over real AWGN",
+  "model": "one real sample per bit; Eb = configured bit_energy",
+  "mapping": {
+    "0": "+sqrt(Eb)",
+    "1": "-sqrt(Eb)"
+  },
+  "noise_variance": "Eb / (2 * 10**(EbN0_dB / 10))",
+  "master_seed": 20261027,
+  "seed_strategy": "NumPy SeedSequence(master_seed) spawns one child per SNR; each child spawns independent bit and noise streams. Derived uint32 seeds are saved per row.",
+  "stopping_rule": "Fixed configured bit count at every SNR; no adaptive stopping.",
+  "points": [
+    {
+      "ebn0_db": 0.0,
+      "bit_energy": 1.0,
+      "n_bits": 200000,
+      "bit_seed": 2677379175,
+      "noise_seed": 2358556140
+    },
+    {
+      "ebn0_db": 2.0,
+      "bit_energy": 1.0,
+      "n_bits": 200000,
+      "bit_seed": 1807882848,
+      "noise_seed": 3715055907
+    },
+    {
+      "ebn0_db": 4.0,
+      "bit_energy": 1.0,
+      "n_bits": 200000,
+      "bit_seed": 432319429,
+      "noise_seed": 1518055632
+    },
+    {
+      "ebn0_db": 6.0,
+      "bit_energy": 1.0,
+      "n_bits": 200000,
+      "bit_seed": 3713015138,
+      "noise_seed": 170081947
+    },
+    {
+      "ebn0_db": 8.0,
+      "bit_energy": 1.0,
+      "n_bits": 200000,
+      "bit_seed": 2294466390,
+      "noise_seed": 1265446358
+    },
+    {
+      "ebn0_db": 10.0,
+      "bit_energy": 1.0,
+      "n_bits": 200000,
+      "bit_seed": 2762703371,
+      "noise_seed": 3515209300
+    }
+  ],
+  "software": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  }
+}

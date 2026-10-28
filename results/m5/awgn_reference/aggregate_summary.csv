@@ -1,0 +1,6 @@
+scenario,scenario_point_index,scenario_parameter,scenario_value,receiver_id,n_repetitions,mean_run_ber,between_run_ber_standard_deviation,mean_run_ber_t_ci_lower,mean_run_ber_t_ci_upper,mean_errors_per_run,bits_per_run,per_run_binomial_intervals_retained_in_results_csv
+awgn_reference,0,ebn0_db,0.0,baseline_m1,2,0.07665,0.002616295090390222,0.05314352123807685,0.10015647876192314,766.5,10000,True
+awgn_reference,1,ebn0_db,2.0,baseline_m1,2,0.038400000000000004,0.003959797974644667,0.002822626738710851,0.07397737326128916,384.0,10000,True
+awgn_reference,2,ebn0_db,4.0,baseline_m1,2,0.012,0.0022627416997969517,0.0,0.0323299275778795,120.0,10000,True
+awgn_reference,3,ebn0_db,6.0,baseline_m1,2,0.00235,0.0004949747468305834,0.0,0.006797171657661144,23.5,10000,True
+awgn_reference,4,ebn0_db,8.0,baseline_m1,2,0.00015000000000000001,7.071067811865475e-05,0.0,0.0007853102368087347,1.5,10000,True
