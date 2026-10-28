@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" role="img" aria-labelledby="title desc">
+  <title id="title">SignalShield communication system</title>
+  <desc id="desc">Three colored signal paths pass through a digital communication channel and reach the recovered output.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#526575"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 78h118l25 0 20 19 23-39 23 39 20-19h90" stroke="#087E8B" stroke-width="8"/>
+    <path d="M25 150h118l25 0 20 19 23-39 23 39 20-19h90" stroke="#D97706" stroke-width="8"/>
+    <path d="M25 222h118l25 0 20 19 23-39 23 39 20-19h90" stroke="#6D5BD0" stroke-width="8"/>
+    <path d="M344 78h34v144h-34M494 78h34v144h-34" stroke="#526575" stroke-width="7"/>
+    <path d="M529 150h215" stroke="#526575" stroke-width="7" marker-end="url(#arrow)"/>
+  </g>
+  <rect x="378" y="61" width="116" height="178" rx="25" fill="#EAF5F5" stroke="#087E8B" stroke-width="7"/>
+  <circle cx="436" cy="101" r="14" fill="#087E8B"/>
+  <circle cx="436" cy="150" r="14" fill="#D97706"/>
+  <circle cx="436" cy="199" r="14" fill="#6D5BD0"/>
+  <circle cx="748" cy="150" r="16" fill="#087E8B"/>
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#526575" text-anchor="middle">
+    <text x="84" y="37">INPUT SIGNALS</text>
+    <text x="436" y="278">DIGITAL LINK</text>
+    <text x="692" y="115">RECOVERED</text>
+  </g>
+</svg>

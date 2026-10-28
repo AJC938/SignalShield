@@ -32,9 +32,9 @@ def apply_ui_theme() -> None:
             background-image:
                 radial-gradient(ellipse at 50% 0%, rgba(8,126,139,.08), transparent 42%),
                 url("data:image/svg+xml;base64,{pattern}");
-            background-position: center, right 2rem top 7rem;
-            background-size: auto, min(58vw, 720px) auto;
-            background-repeat: no-repeat, repeat-y;
+            background-position: center, right 2rem top 0;
+            background-size: auto, 310px 180px;
+            background-repeat: no-repeat;
             background-attachment: fixed;
             font-size: 1.06rem;
         }}
@@ -42,15 +42,18 @@ def apply_ui_theme() -> None:
         .stApp [data-testid="stMarkdownContainer"] p {{ font-size: 1.06rem; line-height: 1.55; }}
         .stApp [data-testid="stWidgetLabel"] p {{ font-size: 1.02rem; }}
         .stApp input, .stApp textarea, .stApp button {{ font-size: 1.02rem; }}
-        .signalshield-hero {{ text-align: center; padding: .35rem 0 .8rem; }}
-        .signalshield-hero h1 {{ font-size: clamp(2.45rem, 5vw, 3.5rem); margin: 0; }}
-        .signalshield-hero p {{ font-size: 1.18rem; margin: .35rem 0 0; color: #526575; }}
+        .signalshield-hero {{ display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center !important; width: 100%; padding: .6rem 0 1rem; }}
+        .signalshield-logo {{ display: block; width: 82px; height: 82px; margin: 0 auto .25rem; }}
+        .signalshield-hero h1 {{ font-size: clamp(2.8rem, 5.2vw, 4rem); margin: 0; width: 100%; text-align: center !important; }}
+        .signalshield-hero p {{ font-size: 1.28rem; margin: .45rem 0 0; color: #526575; width: 100%; text-align: center !important; }}
         .signal-flow {{ text-align: center; color: #087E8B; font-size: 1.05rem; font-weight: 700; letter-spacing: .07em; }}
         .signal-core {{ text-align: center; padding: .45rem 0 .1rem; }}
-        .signal-core svg {{ width: 100%; max-width: 280px; height: auto; }}
+        .signal-core img {{ display: block; width: 100%; max-width: 560px; height: auto; margin: .2rem auto .65rem; }}
         .stApp input[type="radio"] {{ accent-color: #087E8B; }}
         @media (max-width: 640px) {{
-            .stApp {{ background-position: center, right top 8rem; background-size: auto, 100vw auto; }}
+            .stApp {{ background-position: center, right top 8rem; background-size: auto, 225px 130px; }}
+            .signalshield-logo {{ width: 68px; height: 68px; }}
+            .signalshield-hero h1 {{ font-size: 2.7rem; }}
             .signalshield-hero p {{ font-size: 1rem; }}
         }}
         </style>""",

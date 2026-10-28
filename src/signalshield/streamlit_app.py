@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import base64
 from datetime import datetime
 import json
 from pathlib import Path
@@ -440,6 +441,15 @@ def _performance_workload_bits(n_bits: int, repetitions: int, condition_count: i
     return n_bits * repetitions * condition_count
 
 
+def _svg_asset_uri(filename: str) -> str | None:
+    """Load an optional packaged SVG asset as a browser-safe data URI."""
+    asset_path = Path(__file__).resolve().parent / "assets" / filename
+    if not asset_path.is_file():
+        return None
+    encoded = base64.b64encode(asset_path.read_bytes()).decode("ascii")
+    return f"data:image/svg+xml;base64,{encoded}"
+
+
 def _render_performance_lab() -> None:
     st.subheader("Experiment setup")
     st.caption(
@@ -561,12 +571,19 @@ def _render_performance_lab() -> None:
 def main() -> None:
     st.set_page_config(page_title="SignalShield Lab", page_icon="📡", layout="wide")
     apply_ui_theme()
+    logo_uri = _svg_asset_uri("signalshield_logo.svg")
+    logo_markup = (
+        f'<img class="signalshield-logo" style="display:block;width:82px;height:82px;margin:0 auto .25rem" '
+        f'src="{logo_uri}" alt="SignalShield signal logo">'
+        if logo_uri else ""
+    )
     st.markdown(
-        "<div class='signalshield-hero'><h1>📡 SignalShield</h1>"
-        "<p>Interactive Digital Communications Lab · Transmit · Disturb · Recover · Analyze</p></div>",
+        "<div class='signalshield-hero' style='display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;width:100%;padding:.6rem 0 1rem'>"
+        + logo_markup
+        + "<h1 style='font-size:clamp(2.8rem,5.2vw,4rem);margin:0;width:100%;text-align:center;color:#172B3A'>SignalShield</h1>"
+        + "<p style='font-size:1.28rem;margin:.45rem 0 0;color:#526575;width:100%;text-align:center'>Interactive Digital Communications Lab</p></div>",
         unsafe_allow_html=True,
     )
-    st.caption("Explore a reproducible digital link. Educational simulation; not a physical radio or security product.")
 
     transmission_tab, analysis_tab, lab_tab = st.tabs([
         "Transmit & Analyze", "Channel & Receiver Analysis", "Performance Lab"
@@ -612,22 +629,15 @@ def main() -> None:
 
         with system_column:
             st.markdown("### 02 · Signal system")
-            st.markdown("""
-                <div class="signal-core">
-                  <svg viewBox="0 0 300 132" role="img" aria-label="Three signal paths through a communication system">
-                    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-                      <path d="M8 32h57l15 0 10 10 10-20 10 20 10-10h30" stroke="#087E8B"/>
-                      <path d="M8 66h57l15 0 10 10 10-20 10 20 10-10h30" stroke="#D97706"/>
-                      <path d="M8 100h57l15 0 10 10 10-20 10 20 10-10h30" stroke="#6D5BD0"/>
-                      <path d="M150 32h20v68h-20M218 32h20v68h-20M238 66h54" stroke="#526575"/>
-                    </g>
-                    <rect x="170" y="26" width="48" height="80" rx="10" fill="#E8F3F4" stroke="#087E8B" stroke-width="2"/>
-                    <circle cx="194" cy="45" r="5" fill="#087E8B"/><circle cx="194" cy="66" r="5" fill="#D97706"/><circle cx="194" cy="87" r="5" fill="#6D5BD0"/>
-                    <circle cx="289" cy="66" r="7" fill="#087E8B"/>
-                  </svg>
-                  <div class="signal-flow">MODULATE · CHANNEL · RECOVER</div>
-                </div>
-                """, unsafe_allow_html=True)
+            system_uri = _svg_asset_uri("signal_system.svg")
+            if system_uri:
+                st.markdown(
+                    f'<div class="signal-core"><img src="{system_uri}" alt="BPSK signal paths through the communication channel and receiver"></div>',
+                    unsafe_allow_html=True,
+                )
+            else:
+                st.caption("Signal path: Modulate → Channel → Recover")
+            st.markdown("<div class='signal-flow'>MODULATE · CHANNEL · RECOVER</div>", unsafe_allow_html=True)
             with st.expander("Advanced Settings", expanded=False):
                 st.markdown("#### Channel")
                 channel_left, channel_right = st.columns(2)
@@ -734,7 +744,7 @@ def main() -> None:
             if result is None:
                 with st.container(border=True):
                     st.markdown("### 03 · Output")
-                    st.info("Run the signal system to see its recovered output here.")
+                    st.info("Recovered output will appear here after transmission.")
             elif not result_current:
                 with st.container(border=True):
                     st.markdown("### 03 · Output")

@@ -21,7 +21,9 @@ The project directory was not previously a Git repository and had no configured 
 - `pyproject.toml` declares bounded supported major versions and a Streamlit app extra compatible with the tested UI.
 - `.gitignore` excludes the virtual environment, Python/test caches, Streamlit secrets, local audio smoke fixture, generated Performance Lab output, and install-check logs. The `results/` figures and validation evidence referenced by project documentation remain included.
 - Removed developer-machine absolute paths from historical reports and retained validation JSON/logs. A repository-wide scan of the included text files found no personal absolute path, credential/token pattern, or Streamlit secrets file.
-- The transmission interface now has a centered, larger SignalShield heading and an Input → Signal System → Output composition with three visible signal paths. Actual recovered text/audio appears in the Output panel; signal analysis is below the flow.
+- The transmission interface now has an inline-centered, larger SignalShield heading and an Input → Signal System → Output composition with three visible signal paths. Actual recovered text/audio appears in the Output panel; signal analysis is below the flow.
+- Added two SVG assets for the project signal logo and communication-system diagram. README is a centered project landing page; terminal launch/test/experiment commands were removed from GitHub README. The verified free Cloud link will be placed in its centered link block after deployment.
+- README no longer presents the local Terminal workflow; it has a concise feature overview, centered brand mark, system illustration, and a reserved centered area for the eventual verified app link.
 - Public Performance Lab runs are limited to 250,000 bits per run, four repetitions, and 1,000,000 total bit trials across selected sweep conditions. Existing CLI experiments retain their research configurations. Interactive text/audio limits and numeric widget ranges remain in place.
 - The app provides downloads for experiment manifests/results. Cloud-generated output files are treated as temporary; the UI tells users to download results they want to keep.
 
@@ -30,11 +32,12 @@ No API keys, secrets, external APIs, paid services, or extra native packages are
 ## Validation performed
 
 - `python -m compileall -q src/signalshield` — passed.
-- `python -m pytest -q` — **93 passed in 9.01s**. Includes the existing M1–M6 test suite, Streamlit AppTest, WAV limits/normalization, framing/CRC/FEC, receiver comparisons, and the public experiment workload-budget check.
+- `python -m pytest -q` — **93 passed in 13.89s** after the centered logo, signal-system SVG, README simplification, and UI wording changes. Includes the existing M1–M6 test suite, Streamlit AppTest, WAV limits/normalization, framing/CRC/FEC, receiver comparisons, and the public experiment workload-budget check.
 - `python -m pip install --dry-run -r requirements.txt` — passed in the current Python 3.11 environment; editable project metadata and all pinned direct dependencies resolved.
 - Fresh-environment install from `requirements.txt` and import smoke — **passed** in a new Python 3.11 venv: `fresh-environment-imports-ok 2.4.6 1.17.1 3.11.2 1.66.1` (NumPy, SciPy, Matplotlib, Streamlit); the editable `signalshield` package also imported.
+- Package resource check in that clean environment confirmed both SVG assets are discoverable: `packaged-assets True True`.
 - Local Streamlit root and health endpoint on port 8522 — HTTP 200 and `ok`.
-- Browser smoke run after the UI redesign — transmitted “SignalShield demo”; the output panel displayed the recovered text, exact-match/CRC success, and analysis displayed coded-bit BER 0 with zero errors.
+- Browser smoke run after the latest centered branding and SVG changes — transmitted “SignalShield demo”; the output panel displayed the recovered text, exact-match/CRC success, and analysis displayed coded-bit BER 0 with zero errors. Browser warning/error log was empty.
 - Earlier M6 browser validation covered WAV upload, paired baseline/notch receiver diagnostics, and the Performance Lab runner. Existing automated tests continue covering those paths.
 - Streamlit Community Cloud documentation confirms the deployment fields, entry point handling, Python version selection, and public/private behavior. A public repository results in a public app by default; public viewing must still be verified after deployment.
 

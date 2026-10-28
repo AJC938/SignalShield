@@ -3,7 +3,7 @@
 **Date:** 2026-10-28  
 **Scope:** Visual hierarchy, interaction flow, payload comparison, scientific plots, receiver diagnostics, and final validation for the existing Streamlit application.
 
-**Final refinement update:** Expanded the connected-signal visual language, centered and enlarged the SignalShield title, and rebuilt the transmission screen as an Input → Signal System → Output flow. A multichannel signal diagram sits inside the system panel; the recovered payload is shown in its own output card, with signal analysis below. Typography is larger and the flow stacks on narrow screens. Advanced Settings remain grouped and dependent controls are conditionally shown.
+**Final refinement update:** Added a simple shield-and-wave logo, expanded the connected-signal visual language, centered and enlarged the SignalShield title, and rebuilt the transmission screen as an Input → Signal System → Output flow. A separate multichannel system illustration sits inside the system panel; recovered payload appears in its own output card, with signal analysis below. Typography is larger and the flow stacks on narrow screens. Advanced Settings remain grouped and dependent controls are conditionally shown.
 
 ## Summary of changes
 
@@ -13,6 +13,7 @@
 - Kept Text Message and Voice / Audio as the primary input modes, with WAV format limits visible by the uploader and a compact normalized source-audio preview. Advanced channel, receiver, waveform, seed, and FEC controls remain in a collapsed section and are grouped by purpose. Channel, interference/signal level, receiver/waveform, and integrity/repeatability now have distinct headings; dependent controls are conditionally shown to reduce clutter.
 - Added a restrained signal-connection background motif through a centralized UI theme helper, with a smaller treatment at narrow viewport widths. It sits behind the content and does not interfere with controls.
 - Centered and enlarged the project title and subtitle. Reworked the transmission tab into three labeled panels: Input, Signal System, and Output. The central panel includes three colored signal paths passing through a receiver/system block; actual decoded text or recovered audio is displayed in the output panel. Signal analysis and detailed waveform tabs appear beneath the flow.
+- Added portable `signalshield_logo.svg` and `signal_system.svg` assets. The logo identifies the project; the system illustration shows input paths, the digital link, and recovered output.
 - Increased body text and control-label size for readability while retaining a responsive mobile layout.
 - Reorganized results around a prominent status, three summary metrics, a side-by-side original/recovered payload view, and a diagnostics expander. Audio results show both playback controls and separate audio waveforms; BPSK link waveforms remain explicitly distinguished.
 - Split signal visualizations into Transmit, Channel, Receiver, and Recovery views. Views use actual engine arrays, consistent palette, readable axes/legends, correctly scaled FFT axes from actual sample rates, and bounded plotting. All simulation/decoding metrics still use full-resolution arrays.
@@ -55,7 +56,7 @@ No extra frontend or plotting dependencies were added. Existing M1–M6 reports 
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-Final actual result after UI flow and deployment-limit refinements: **93 passed in 9.01s**. The complete suite includes existing M1–M6 regression tests, Streamlit AppTest, payload framing/CRC, all seven Hamming single-bit positions, two-bit downstream CRC behavior, WAV limits/normalization, clean text/audio transmission, severe-noise integrity, stale-result suppression, paired receiver comparisons, and the public Performance Lab workload-budget helper. AppTest emitted Streamlit's expected `missing ScriptRunContext` diagnostic in bare test mode; pytest reported no failing or skipped tests.
+Final actual result after the centered SVG branding, README simplification, and UI wording refinements: **93 passed in 13.89s**. The complete suite includes existing M1–M6 regression tests, Streamlit AppTest, payload framing/CRC, all seven Hamming single-bit positions, two-bit downstream CRC behavior, WAV limits/normalization, clean text/audio transmission, severe-noise integrity, stale-result suppression, paired receiver comparisons, and the public Performance Lab workload-budget helper. AppTest emitted Streamlit's expected `missing ScriptRunContext` diagnostic in bare test mode; pytest reported no failing or skipped tests.
 
 ### Live browser checks
 
